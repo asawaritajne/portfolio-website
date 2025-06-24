@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/55f8f8b0fc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<script src="script.js"></script>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.jpg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav> 
+        <div class="header-text">
+            <p>Software Engineer</p>
+            <h1>Hi, I'm <span>Asawari</span> <br>Tajne from India</h1>
+        </div>
+    </div>
+</div>
+<!--------------about--------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>Experienced Software Engineer with a demonstrated history of working in the information technology
+                     and services industry. Skilled in Angular, React, JavaScript, and project management. 
+                     Strong engineering professional with a Master of Science in Information Technology Managemen.</p>
+
+                 <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')" >Skills</p>
+                    <p class="tab-links"  onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links"  onclick="opentab('education')">Education</p>
+                 </div>
+                 <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                    <li><span>Frontend Engineer</span><br>Designing Web/App interface</li>
+                    <li><span>Web Development</span><br>Web app Development</li>
+                    </ul>
+                 </div>
+                  <div class="tab-contents" id="experience">
+                    <ul>
+                    <li><span>2021-2023</span><br>Software Engineer at Tech Mahindra</li>
+                    <li><span>2019-2020</span><br>Intern at Maxgen Technologies</li>
+                    </ul>
+                 </div>
+                  <div class="tab-contents" id="education">
+                    <ul>
+                    <li><span>2020</span><br>Bachelor of Engineering in Information Technology</li>
+                    <li><span>2026</span><br>Master's in IT Management</li>
+                    </ul>
+                 </div>
+                 
+            </div>
+        </div>
+    </div>  
+</div>
+<!----------services--------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Crafting visually appealing and user-friendly website layouts with a focus on aesthetics,
+                     usability, and responsive design to enhance user experience.</p>
+                 <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>FrontEnd Development</h2>
+                <p>Building the interactive and visual components of websites using technologies like HTML, CSS, and
+                     JavaScript to ensure seamless user interaction and performance.</p>
+                 <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Development</h2>
+                <p>Designing and developing mobile or desktop applications with intuitive interfaces and robust functionality,
+                     tailored to meet user needs across various platforms..</p>
+                 <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------portfolio-------->
+<div id="portfolio">
+    <div class="container">
+         <h1 class="sub-title">My Work</h1>
+         <div class="work-list">
+            <div class="work">
+                <img src="images/work1.jpg">
+                <div class="layer">
+                    <h3>Portfolio App</h3>
+                    <p>A personal website showcasing my skills, projects, and experience. Built using HTML, CSS, and
+                         JavaScript with a responsive design for all devices.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work2.jpg">
+                <div class="layer">
+                    <h3>Todo list App</h3>
+                    <p>A simple and interactive task management app that allows users to add, edit, and delete tasks. </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work3.jpg">
+                <div class="layer">
+                    <h3>Weather App</h3>
+                    <p>An app that fetches real-time weather data from a public API and displays temperature, humidity, and conditions
+                         based on user input.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+         </div>
+         <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!--------------contact------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>tajneasawari@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+14693506541</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/Asawari Tajne Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Asawari. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
+    </div>
+</div>
+</body>
+</html>
